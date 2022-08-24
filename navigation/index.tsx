@@ -14,6 +14,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import HomeScreen from '../screens/HomeScreen';
 import ModalScreen from '../screens/ModalScreen';
+import MovieDetailsScreen from '../screens/MovieDetailScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
@@ -112,8 +113,18 @@ function HomeNavigator(){
       <HomeStack.Navigator>
         <HomeStack.Screen
         name='HomeScreen'
-        component={HomeScreen}
+        // component={HomeScreen}
+        component={MovieDetailsScreen}
         options={{headerShown:false}}
+        />
+
+      <HomeStack.Screen
+        name='MovieDetailsScreen'
+        // component={HomeScreen}
+        component={MovieDetailsScreen}
+        options={{
+          title:''
+        }}
         />
       </HomeStack.Navigator>
   )

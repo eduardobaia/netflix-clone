@@ -42,4 +42,5 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> = Composit
 
 export type HomeParamList = {
   HomeScreen: undefined;
+  MovieDetailsScreen:undefined;
 }
